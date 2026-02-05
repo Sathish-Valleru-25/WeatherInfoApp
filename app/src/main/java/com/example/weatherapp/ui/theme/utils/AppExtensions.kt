@@ -10,7 +10,7 @@ import java.util.TimeZone
  */
 fun Double.toFahrenheit(): String {
     val fahrenheit = (this - 273.15) * 9/5 + 32
-    return String.format("%.2f", fahrenheit)
+    return String.format(Locale.US, "%.2f", fahrenheit)
 }
 
 /**

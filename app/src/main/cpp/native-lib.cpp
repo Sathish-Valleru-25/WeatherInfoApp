@@ -3,7 +3,7 @@
 #include <string>
 
 // Helper macros to convert the compile-time definition to a C++ string
-#define XSTR(s) STR(s)
+
 #define STR(s) #s
 
 extern "C" JNIEXPORT jstring JNICALL
