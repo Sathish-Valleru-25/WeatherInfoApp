@@ -91,7 +91,7 @@ class WeatherViewModelTest {
     @Test
     fun `loadLastCity with valid city triggers search and updates state`() = runTest {
         // Given
-        val lastCity = "Paris"
+        val lastCity = "Los Angles"
         val weatherResponse = createFakeWeatherResponse(lastCity)
         whenever(repository.lastSearchedCity).thenReturn(flowOf(lastCity))
         whenever(repository.getWeatherByCity(lastCity)).thenReturn(weatherResponse)
